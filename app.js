@@ -76,7 +76,8 @@ const server=http.createServer((req, res)=>{
     
 });
 
-server.listen(3000, 'localhost');
+server.listen(process.env.PORT);
+console.log("Listening: "+process.env.PORT);
 
 // converter('EUR','USD',(data)=>{
 //     data.forEach((d) => { // forEach yra metodas kuris iškvietinės funkciją kiekvienam masyvo elememtui
